@@ -2,7 +2,6 @@ import br.com.desafio.classes.animal.cachorro;
 import br.com.desafio.classes.animal.gato;
 import br.com.desafio.classes.carro.modeloCarro;
 import br.com.desafio.classes.contaBancaria.ContaCorrente;
-import br.com.desafio.classes.contaBancaria.contaBancaria;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -22,8 +21,10 @@ public class App {
         System.out.println("--------------------------------------------------------------");
         cachorro cachorro1 = new cachorro();
         cachorro1.emitirSom();
+        cachorro1.AbanarORabo();
         gato gato1 = new gato();
         gato1.emitirSom();
+        gato1.ArranharAPorta();
         System.out.println("--------------------------------------------------------------");
         ContaCorrente conta1 = new ContaCorrente();
         conta1.setTitular("Joaquim");

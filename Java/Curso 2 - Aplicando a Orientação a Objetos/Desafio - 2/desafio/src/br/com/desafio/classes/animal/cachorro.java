@@ -7,5 +7,8 @@ public class cachorro extends animal{
         System.out.println("au-au");
         super.emitirSom();
     }
+    public void AbanarORabo(){
+        System.out.println("Abanar o rabo");
+    }
     
 }

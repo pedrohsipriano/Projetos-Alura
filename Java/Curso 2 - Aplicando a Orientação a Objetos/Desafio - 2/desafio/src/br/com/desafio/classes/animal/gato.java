@@ -8,4 +8,7 @@ public class gato extends animal{
         super.emitirSom();
     }
     
+    public void ArranharAPorta(){
+        System.out.println("Arranhar a porta");
+    }
 }
