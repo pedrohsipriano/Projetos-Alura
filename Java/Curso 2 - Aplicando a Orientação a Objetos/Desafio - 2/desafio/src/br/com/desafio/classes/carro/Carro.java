@@ -40,21 +40,21 @@ public class Carro{
 
     public void imprimirPrecoMaiorPreco() {
         if (preco1 > preco2 && preco1 > preco3) {
-            System.out.println("O carro mais caro é o modelo " + getModelo() + " e custa R$ " + getPreco1());
+            System.out.println("O carro mais caro custa R$ " + getPreco1());
         } else if (preco2 > preco1 && preco2 > preco3) {
-            System.out.println("O carro mais caro é o modelo " + getModelo() + " e custa R$ " + getPreco2());
+            System.out.println("O carro mais caro custa R$ " + getPreco2());
         } else if (preco3 > preco1 && preco3 > preco2) {
-            System.out.println("O carro mais caro é o modelo " + getModelo() + " e custa R$ " + getPreco3());
+            System.out.println("O carro mais caro custa R$ " + getPreco3());
         }
     }
 
     public void imprimirPrecoMenorPreco() {
         if (preco1 < preco2 && preco1 < preco3) {
-            System.out.println("O carro mais barato é o modelo " + getModelo() + " e custa R$ " + getPreco1());
+            System.out.println("O carro mais barato custa R$ " + getPreco1());
         } else if (preco2 < preco1 && preco2 < preco3) {
-            System.out.println("O carro mais barato é o modelo " + getModelo() + " e custa R$ " + getPreco2());
+            System.out.println("O carro mais barato custa R$ " + getPreco2());
         } else if (preco3 < preco1 && preco3 < preco2) {
-            System.out.println("O carro mais barato é o modelo " + getModelo() + " e custa R$ " + getPreco3());
+            System.out.println("O carro mais barato custa R$ " + getPreco3());
         }
     }
 }
