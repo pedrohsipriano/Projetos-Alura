@@ -1,4 +1,6 @@
 import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
+import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
+import br.com.alura.screenmatch.modelos.Epidosdio;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 
@@ -46,5 +48,16 @@ public class Principal {
         calculadora.inclui(outroFilme);
         calculadora.inclui(lost);
         System.out.println(calculadora.getTempoTotal());
+
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        filtro.filtra(meuFilme);
+
+        Epidosdio epidosdio1 = new Epidosdio();
+        epidosdio1.setNome("Morte");
+        epidosdio1.setNumero(11);
+        epidosdio1.setSerie(lost);
+        epidosdio1.setTotalVisualizacoes(0);
+
+        filtro.filtra(epidosdio1);
     }
 } 
