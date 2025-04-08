@@ -23,4 +23,14 @@ public class modeloCarro extends Carro {
     public void setQuantidadePortas(int quantidadePortas) {
         this.quantidadePortas = quantidadePortas;
     }
+
+    public void Descricao(){
+        System.out.println("O modelo do carro é: " + getModelo());
+        System.out.println("O preço do modelo no primeiro ano é: " + getPreco1());
+        System.out.println("O preço do modelo no segundo ano é: " + getPreco2());
+        System.out.println("O preço do modelo no terceiro ano é: " + getPreco3());
+        System.out.println("O ano de lançamento do veiculo é: " + getAno());
+        System.out.println("A cor do veiuclo é: " + getCor());
+        System.out.println("A quantidade de portas do veiculo é: " + getQuantidadePortas());
+    }
 }

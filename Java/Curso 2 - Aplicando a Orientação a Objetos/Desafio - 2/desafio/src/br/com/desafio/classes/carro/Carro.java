@@ -1,6 +1,6 @@
 package br.com.desafio.classes.carro;
 
-public class Carro {
+public class Carro{
     private String modelo;
     private float preco1;
     private float preco2;
