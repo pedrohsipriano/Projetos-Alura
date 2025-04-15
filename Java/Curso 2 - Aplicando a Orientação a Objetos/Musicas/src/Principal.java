@@ -10,8 +10,8 @@ public class Principal {
         musica1.setAlbum("Album Teste");
         musica1.setGenero("Genero Teste");
         musica1.setDuracao(3.5);
-        musica1.setCurtidas(0);
-        musica1.setTotaolReproducoes(0);
+        musica1.setCurtidas(1000);
+        musica1.setTotaolReproducoes(1000);
 
         musica1.DetalhesMusicas();
         System.out.println("***********************************");
@@ -28,7 +28,7 @@ public class Principal {
         podcast1.setDescricao("Descricao Teste");
         podcast1.setDuracao(3.5);
         podcast1.setCurtidas(0);
-        podcast1.setTotaolReproducoes(0);
+        podcast1.setTotaolReproducoes(1000);
 
         podcast1.Detalhespodcast();
         System.out.println("***********************************");

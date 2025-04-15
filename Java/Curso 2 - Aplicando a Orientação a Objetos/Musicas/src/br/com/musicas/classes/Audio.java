@@ -6,6 +6,7 @@ public class Audio {
     private int totaolReproducoes;
     private int curtidas;
     private int filtro;
+    private int classificacao;
 
     public String getTitulo() {
         return titulo;
@@ -30,7 +31,7 @@ public class Audio {
     public int getFiltro() {
         return filtro;
     }
-    
+
     public void setDuracao(double duracao) {
         this.duracao = duracao;
     }
@@ -45,6 +46,10 @@ public class Audio {
 
     public void setFiltro(int filtro) {
         this.filtro = filtro;
+    }
+
+    public int getClassificacao() {
+        return classificacao;
     }
 
     public void DetalhesAudio() {
