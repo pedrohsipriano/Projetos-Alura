@@ -7,8 +7,7 @@ public class Filme extends Titulo implements Classificavel {
     private String diretor;
 
     public Filme(String nome, int anoDeLancamento) {
-        setNome(nome);
-        setAnoDeLancamento(anoDeLancamento);
+        super(nome, anoDeLancamento);
     }
 
     public String getDiretor() {
@@ -22,11 +21,6 @@ public class Filme extends Titulo implements Classificavel {
     @Override
     public int getClassificacao() {
        return (int) pegaMedia() / 2;
-    }
-
-    @Override
-    public String toString() {
-        return "Filme:" + getNome() + " (" + getAnoDeLancamento() + ")";
     }
     
 }

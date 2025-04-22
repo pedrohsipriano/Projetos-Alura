@@ -1,3 +1,4 @@
+package br.com.alura.screenmatch.principal;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
@@ -26,9 +27,7 @@ public class Principal {
 
         System.out.println("");
 
-        Serie lost = new Serie();
-        lost.setNome("Lost");
-        lost.setAnoDeLancamento(2004);
+        Serie lost = new Serie("Lost", 2004);
         lost.setTemporadas(10);
         lost.setEpisodiosPorTemporada(24);
         lost.setMinutosPorEpisodio(45);
