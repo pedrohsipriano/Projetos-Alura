@@ -1,6 +1,10 @@
 package br.com.alura.screenmatch.principal;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.List;
 
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
@@ -18,7 +22,7 @@ public class PrincipalComListas {
 
         var serie1 = new Serie("Lost", 2004);
 
-        var Lista = new ArrayList<Titulo>();
+        List<Titulo> Lista = new LinkedList<>();
         Lista.add(filme1);
         Lista.add(filme2);
         Lista.add(filme3);
@@ -30,7 +34,30 @@ public class PrincipalComListas {
                 System.out.println("Classificação: " + filme.getClassificacao());
             }
         }
+        System.out.println("");
 
         Lista.forEach(System.out::println);
+        System.out.println("");
+
+        var BuscaPorArtista = new ArrayList<String>();
+
+        BuscaPorArtista.add("Artista 1");
+        BuscaPorArtista.add("Artista 4");
+        BuscaPorArtista.add("Artista 3");
+
+        System.out.println("Artistas: " + BuscaPorArtista);
+        Collections.sort(BuscaPorArtista);
+        System.out.println("Depois da ordenação");
+        System.out.println(BuscaPorArtista);
+        System.out.println("");
+
+        System.out.println("lista de titulos ordenados por ordem alfabetica: ");
+        Collections.sort(Lista);
+        System.out.println(Lista);
+        System.out.println("");
+        
+        Lista.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
+        System.out.println("lista de titulos ordenados por ano de lancamento: ");
+        System.out.println(Lista);
     }
 }
