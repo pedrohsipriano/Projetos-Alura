@@ -11,6 +11,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import br.com.alura.Atividade1.Numero.Numero;
 import br.com.alura.Atividade3.Tarefa;
+import br.com.alura.Atividade6.Avaliacao;
 
 @SpringBootApplication
 public class DesafioApplication implements CommandLineRunner{
@@ -44,6 +45,10 @@ public class DesafioApplication implements CommandLineRunner{
       	System.out.println("Tarefa lida do JSON:");
       	System.out.println(tarefaLida);
 		scanner.close();
+
+
+		var avaliacao = new Avaliacao<String>("Livro", 10, "Muito bom!");
+		System.out.println(avaliacao);
 	}
 
 }
