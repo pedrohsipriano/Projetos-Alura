@@ -1,4 +1,5 @@
 from models.avaliacao import Avaliacao
+from models.cardapio.itens_cardapio import ItemCardapio
 import os
 
 os.system("cls")
@@ -29,6 +30,7 @@ class Restaurante:
         self._categoria = categoria.upper()
         self._status = False
         self._avaliacao = []
+        self._cardapio = []
         Restaurante.restaurantes.append(self)
 
     def __str__(self):
@@ -93,3 +95,27 @@ class Restaurante:
         quantidade_notas = len(self._avaliacao)
         media = round(soma_notas / quantidade_notas, 1)
         return media
+        
+    def adicionar_item_cardapio(self, item):
+        """
+        Adiciona um item (bebida ou prato) ao cardápio do restaurante.
+        
+        Args:
+            item (Bebida | Prato): Instância da classe Bebida ou Prato a ser adicionada.
+        """
+        if isinstance(item, ItemCardapio):
+            self._cardapio.append(item)
+            
+    @property
+    def exibir_cardapio(self):
+        """
+        Exibe o cardápio do restaurante, listando todos os itens disponíveis.
+        """
+        print(f'Cardapio do restaurante {self._nome}:\n')
+        for i, item in enumerate(self._cardapio, start=1):
+            if hasattr(item, '_descricao'):
+                mensagem_prato = f'{i}. Nome: {item._nome} | Descricao: {item._descricao} | Preço: R$ {item._preco}'
+                print(mensagem_prato)
+            else:
+                mensagem_bebida = f'{i}. Nome: {item._nome} | Tamanho: {item._tamanho} | Preço: R$ {item._preco}'
+                print(mensagem_bebida)

@@ -13,3 +13,6 @@ class Bebida(ItemCardapio):
             str: Nome, preço e tamanho da bebida formatados.
         """
         return f'{self._nome} - {self._preco:.2f} - {self._tamanho}\n'
+    
+    def aplicar_desconto(self):
+        self._preco -= self._preco * (0.08) 
