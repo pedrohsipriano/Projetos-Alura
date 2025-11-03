@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "*.dbclient-js": "javascript",
+        "*.embeddedhtml": "html",
+        "mapa.h": "c",
+        "stdlib.h": "c",
+        "stdio.h": "c"
+    },
+    "terminal.integrated.profiles.windows": {
+        "PowerShell UTF-8": {
+            "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+            "args": [
+                "-NoExit",
+                "-Command",
+                "chcp 65001"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell UTF-8"
+}
